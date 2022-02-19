@@ -1,26 +1,30 @@
 /* Card-set */
+* {
+  outline: 1px solid salmon;
+}
 .card-set {
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  //   margin: -15px;
+  // }
 }
 
 .card-set__item {
   max-width: 450px;
   outline: 1px solid red;
-  @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
-  }
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 6 * 15px) / 3);
-  }
+  // @media screen and (min-width: 768px) {
+  //   flex-basis: calc((100% - 4 * 15px) / 2);
+  //   margin: 15px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   flex-basis: calc((100% - 6 * 15px) / 3);
+  // }
 }
 
 //   /* Card */
@@ -40,7 +44,7 @@
 
 .card-set__img {
   margin: 0;
-  object-fit: contain;
+  object-fit: fill;
   object-position: center;
 }
 
