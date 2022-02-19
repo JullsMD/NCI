@@ -5,7 +5,7 @@
   --brand-color: #66c3ca;
   --primary-background-color: #ffffff;
   --secondary-background-color: #2f303a;
-  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --footer-text-color: rgba(255, 255, 255, 0.466);
   --secondary-accent: #b8af88;
   --icon-color: #afb1b8;
   --socials-footer: rgba(255, 255, 255, 0.1);
@@ -428,11 +428,11 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .filter__item {
-  margin-top: 10px;
+  margin-top: 5px;
   margin-right: 5px;
 }
 
@@ -442,14 +442,14 @@ p {
 
 .filter__btn {
   display: inline-block;
-  padding: 6px 22px;
+  padding: 6px 12px;
   margin: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-family: inherit;
   font-style: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.5;
   background-color: var(--background-team-btn-icons);
   border: 1px solid transparent;
   border-radius: 4px;
@@ -466,12 +466,7 @@ p {
 }
 
 /* Card-set */
-* {
-  outline: 1px solid salmon;
-}
-
-.card-set {
-  width: 300px;
+.portfolio {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -479,8 +474,9 @@ p {
 }
 
 .card-set__item {
-  max-width: 450px;
-  outline: 1px solid red;
+  max-width: 320px;
+  margin: 60px auto;
+  box-shadow: 3px 2px 18px 19px rgba(34, 60, 80, 0.2);
 }
 
 .card-set__link {
@@ -494,21 +490,19 @@ p {
 }
 
 .card-set__img {
-  margin: 0;
+  display: block;
   object-fit: fill;
   object-position: center;
+  border: 4px solid var(--footer-text-color);
 }
 
 .card-set__description {
-  width: 100%;
   padding: 20px 24px;
-  border-right: 1px solid var(--border-card);
-  border-bottom: 1px solid var(--border-card);
-  border-left: 1px solid var(--border-card);
 }
 
 .card-set__title {
   width: 100%;
+  font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 18px;
   line-height: 1.5;
@@ -520,7 +514,6 @@ p {
   margin-top: 4px;
   font-size: 16px;
   line-height: 1.88;
-  color: var(--secondary-text-color);
 }
 
 .card-set__thumb {
