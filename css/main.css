@@ -232,7 +232,7 @@ p {
 .hero__overlay {
   width: 100%;
   margin-top: 60px;
-  background-image: linear-gradient(to right, rgba(38, 38, 46, 0.699), rgba(47, 48, 58, 0.226)), url("./images/hero/hero.jpg");
+  background-image: linear-gradient(to right, rgba(38, 38, 46, 0.699), rgba(47, 48, 58, 0.226)), url("../../images/portfolio/hero2.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
