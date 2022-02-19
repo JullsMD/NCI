@@ -1,0 +1,117 @@
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.backdrop {
+  padding: 70px 20px;
+
+  opacity: 1;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1999;
+  background-color: var(--backdrop);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+}
+
+.backdrop.is-hidden .hero-modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-modal {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px;
+  z-index: 2000;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-background-color);
+  border-radius: 4px;
+
+  // @media screen and (min-width: 768px) {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%) scale(1);
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   width: 528px;
+  //   min-height: 581px;
+  // }
+}
+
+.hero-modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1000;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+
+  &:hover .hero-modal__icon-cross,
+  &:focus .hero-modal__icon-cross {
+    fill: var(--brand-color);
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+}
+
+.hero-modal__icon-cross {
+  display: inline-block;
+  transform-origin: center;
+  transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.hero-modal__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 1.7;
+  letter-spacing: 0.06em;
+
+  color: var(--brand-color);
+}
+.hero-modal__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.hero-modal__item {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.hero-modal__link {
+  display: inline-block;
+  padding: 15px;
+  min-width: 100%;
+  transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  font-weight: 700;
+  font-size: 20px;
+  color: inherit;
+
+  border: 3px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}

@@ -1,0 +1,29 @@
+.menu-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  &:hover .menu-btn__icon,
+  &:active .menu-btn__icon {
+    fill: var(--secondary-accent);
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  }
+}
+.menu-btn__icon {
+  transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.menu-btn .menu-btn__icon-cross {
+  display: none;
+}
+.menu-btn.is-open .menu-btn__icon-cross {
+  display: block;
+}
+.menu-btn.is-open .menu-btn__icon-menu {
+  display: none;
+}

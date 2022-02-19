@@ -1,0 +1,13 @@
+.logo__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo__icon {
+  fill: var(--secondary-background-color);
+}
+.footer .logo__icon {
+  fill: var(--secondary-accent);
+}

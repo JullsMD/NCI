@@ -1,0 +1,23 @@
+/*  HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2001;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  background-color: var(--primary-background-color);
+  color: var(--secondary-background-color);
+}
+
+.header__title {
+  font-family: var(--brand);
+  font-size: 30px;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--brand-color);
+}
